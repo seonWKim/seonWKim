@@ -1,4 +1,4 @@
-### Things I'm Interested In 
+### Things I do 
 - Tech
     - Server, Database, Distributes computing, Programming languages
     - bit of AI when needed... 
