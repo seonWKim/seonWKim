@@ -2,7 +2,7 @@
 - Tech
     - Server, Database, Distributes computing, Programming languages
     - bit of AI when needed... 
-- Soft Skills
+- Others 
     - [Toastmasters](https://www.instagram.com/hongdaetoastmasters/)
     - Software Developer Mentorship       
 
