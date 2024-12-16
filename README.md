@@ -1,7 +1,10 @@
 ### Things I do 
 - Tech
     - Server, Database, Distributes computing, Programming languages
-    - bit of AI when needed... 
+    - bit of AI when needed...
+- Open Source
+    - [Armeria](https://github.com/line/armeria)
+    - [Limbo](https://github.com/tursodatabase/limbo)
 - Others 
     - [Toastmasters](https://www.instagram.com/hongdaetoastmasters/)
     - Software Developer Mentorship       
