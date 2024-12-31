@@ -6,7 +6,7 @@
     - [Armeria](https://github.com/line/armeria)
     - [Limbo](https://github.com/tursodatabase/limbo)
 - Others 
-    - [Toastmasters](https://www.instagram.com/hongdaetoastmasters/)
+    - [Toastmasters](https://seonwkim.github.io/hdtm-document/)
     - Software Developer Mentorship       
 
 ### Blog 
