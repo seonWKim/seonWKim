@@ -6,8 +6,8 @@
     - [Armeria](https://github.com/line/armeria)
     - [Limbo](https://github.com/tursodatabase/limbo)
 - Others 
-    - [Toastmasters](https://seonwkim.github.io/hdtm-document/)
-    - Software Developer Mentorship       
+    - [Toastmasters](https://seonwkim.github.io/hdtm-document/) (2023 ~ ) 
+    - [F-Lab] Software Developer Mentorship Mentor (2023 ~ )       
 
 ### Blog 
 - [Korean](https://code-run.tistory.com/)
