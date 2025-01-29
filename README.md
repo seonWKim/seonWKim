@@ -7,7 +7,7 @@
     - [Limbo](https://github.com/tursodatabase/limbo)
 - Others 
     - [Toastmasters](https://seonwkim.github.io/hdtm-document/) (2023 ~ ) 
-    - [F-Lab] Software Developer Mentorship Mentor (2023 ~ )       
+    - [F-Lab](https://f-lab.kr/?utm_source=gdn&utm_medium=da&utm_campaign=performancemax_3&utm_content=max_20240905&gad_source=1&gclid=Cj0KCQiAwOe8BhCCARIsAGKeD55JXZxLZcMySohgWnapaBN_S3Sc_Mt15Eql3fyq2Gevix0abd5OjnAaAiaHEALw_wcB) Software Developer Mentorship Mentor (2023 ~ )       
 
 ### Blog 
 - [Korean](https://code-run.tistory.com/)
