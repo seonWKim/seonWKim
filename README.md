@@ -1,27 +1,20 @@
-# Minimal Mistakes remote theme starter
+### Things I do
+- Tech
+    - Server, Database, Distributes computing, Programming languages
+    - bit of AI when needed...
+- Open Source
+    - [Armeria](https://github.com/line/armeria)
+    - [Limbo](https://github.com/tursodatabase/limbo)
+- Others
+    - [Toastmasters](https://seonwkim.github.io/hdtm-document/) (2023 ~ )
+    - [F-Lab](https://f-lab.kr/?utm_source=gdn&utm_medium=da&utm_campaign=performancemax_3&utm_content=max_20240905&gad_source=1&gclid=Cj0KCQiAwOe8BhCCARIsAGKeD55JXZxLZcMySohgWnapaBN_S3Sc_Mt15Eql3fyq2Gevix0abd5OjnAaAiaHEALw_wcB) Software Developer Mentorship Mentor (2023 ~ )
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+### Blog
+- [Korean](https://code-run.tistory.com/)
 
-Contains basic configuration to get you a site with:
-
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
-
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
-
----
-
-## Troubleshooting
-
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+### Connect me with
+<p>
+    <a href="https://www.linkedin.com/in/seon-woo-kim-53b6481ba/" target="_blank">
+        <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" height="30"/>
+    </a> 
+</p>
