@@ -1,0 +1,515 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.0 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Building a Side Project: Blending Spring and the Actor Model - Engineering Blog</title>
+<meta name="description" content="Recently, I’ve been busy with work, and I ended up putting off my side projects. I started feeling like I was losing the real happiness that comes from learning something new outside of my job. I really wanted to make something useful (there MUST be a NEED) and regain the joy that comes from programming.">
+
+
+  <meta name="author" content="Seon Woo Kim">
+  
+  <meta property="article:author" content="Seon Woo Kim">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Engineering Blog">
+<meta property="og:title" content="Building a Side Project: Blending Spring and the Actor Model">
+<meta property="og:url" content="https://github.com/pages/seonWKim/seonWKim/blog/welcome-to-jekyll/">
+
+
+  <meta property="og:description" content="Recently, I’ve been busy with work, and I ended up putting off my side projects. I started feeling like I was losing the real happiness that comes from learning something new outside of my job. I really wanted to make something useful (there MUST be a NEED) and regain the joy that comes from programming.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-04-27T15:00:00+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://github.com/pages/seonWKim/seonWKim/blog/welcome-to-jekyll/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/pages/seonWKim/seonWKim/feed.xml" type="application/atom+xml" rel="alternate" title="Engineering Blog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/pages/seonWKim/seonWKim/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/pages/seonWKim/seonWKim/">
+          Engineering Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/pages/seonWKim/seonWKim/posts/"
+                
+                
+              >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/pages/seonWKim/seonWKim/categories/"
+                
+                
+              >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/pages/seonWKim/seonWKim/tags/"
+                
+                
+              >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/pages/seonWKim/seonWKim/about/"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://github.com/pages/seonWKim/seonWKim/">
+        <img src="/pages/seonWKim/seonWKim/assets/images/bio-photo.png" alt="Seon Woo Kim" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://github.com/pages/seonWKim/seonWKim/" itemprop="url">Seon Woo Kim</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Software engineer</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://github.com/seonWKim" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://code-run.tistory.com/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Korean Blog</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Building a Side Project: Blending Spring and the Actor Model">
+    <meta itemprop="description" content="Recently, I’ve been busy with work, and I ended up putting off my side projects. I started feeling like I waslosing the real happiness that comes from learning something new outside of my job. I really wanted to makesomething useful (there MUST be a NEED) and regain the joy that comes from programming.">
+    <meta itemprop="datePublished" content="2025-04-27T15:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://github.com/pages/seonWKim/seonWKim/blog/welcome-to-jekyll/" itemprop="url">Building a Side Project: Blending Spring and the Actor Model
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Recently, I’ve been busy with work, and I ended up putting off my side projects. I started feeling like I was
+losing the real happiness that comes from learning something new outside of my job. I really wanted to make
+something useful (there MUST be a NEED) and regain the joy that comes from programming.</p>
+
+<p>In South Korea, most companies use Java with Spring (usually Spring Boot). Modern programming guides recommend
+building stateless architectures. So yes, we mostly use Spring MVC (or WebFlux) to build our web servers. But
+sometimes, I’ve struggled when architecting applications that need stateful features. Think about chat apps —
+your server needs to know where the clients inside the same chatroom are located. Otherwise, you can’t send
+messages between them. In stateless applications, you have to find a way to make it stateful. For example:</p>
+
+<ul>
+  <li>Using a message bus like Redis pub/sub, NATS.io, or Kafka.</li>
+</ul>
+
+<p>Sure, building that kind of system is fine at big companies. But what if you want to build it as a side project
+using familiar tech like Spring Boot? Do you really want to introduce a whole message bus into your
+architecture? (Especially when your server handles only a small number of requests — or even none?)</p>
+
+<p>There’s a well-known programming model suited for stateful applications: the actor model.</p>
+
+<p>I’ve heard about it here and there:</p>
+
+<ul>
+  <li>The Akka framework</li>
+  <li>The Elixir programming language</li>
+  <li>Big tech and telecom companies</li>
+</ul>
+
+<p>I became pretty interested in the way they model things:</p>
+
+<ul>
+  <li>Encapsulate logic into actors</li>
+  <li>Communicate by sending messages between them</li>
+</ul>
+
+<p>It felt much more intuitive, especially from an OOP (Object-Oriented Programming) perspective. With Spring Boot
+and plain Java, I always had to be careful not to break encapsulation and OOP best practices. But with actors,
+just following their programming style naturally keeps you within good OOP principles. Beyond that, actors make
+clustering across stateful applications much easier.</p>
+
+<p>The actor model isn’t a silver bullet either. (If it were, wouldn’t it be used everywhere?) But if I can
+integrate the actor model with Spring, maybe I can bring together the good parts of both worlds. (Yeah, it could
+also bring the worst parts too — who knows.)</p>
+
+<p>Here’s the rough plan:</p>
+
+<ul>
+  <li>Build a library that integrates Spring and the actor model.</li>
+  <li>Not build the actor system from scratch.</li>
+  <li>Instead, use Pekko — an open-source, community-driven fork of Akka without licensing headaches.</li>
+</ul>
+
+<p>Pekko has already been battle-tested in many real-world systems, so it feels like a solid choice.</p>
+
+<p>Starting a new side project is always exciting. But to make it sustainable, it has to be <strong>useful</strong>. While
+developing, I’ll stay focused on:</p>
+
+<ul>
+  <li>Being <strong>practical</strong> first</li>
+  <li>Optimization and beautiful code will come later — after the working code</li>
+</ul>
+
+<p>Hope I can run a (programming) marathon this time.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/pages/seonWKim/seonWKim/tags/#actormodel" class="page__taxonomy-item p-category" rel="tag">ActorModel</a><span class="sep">, </span>
+    
+      <a href="/pages/seonWKim/seonWKim/tags/#java" class="page__taxonomy-item p-category" rel="tag">Java</a><span class="sep">, </span>
+    
+      <a href="/pages/seonWKim/seonWKim/tags/#pekko" class="page__taxonomy-item p-category" rel="tag">Pekko</a><span class="sep">, </span>
+    
+      <a href="/pages/seonWKim/seonWKim/tags/#sideproject" class="page__taxonomy-item p-category" rel="tag">SideProject</a><span class="sep">, </span>
+    
+      <a href="/pages/seonWKim/seonWKim/tags/#springboot" class="page__taxonomy-item p-category" rel="tag">SpringBoot</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/pages/seonWKim/seonWKim/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-04-27T15:00:00+00:00">April 27, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=Building+a+Side+Project%3A+Blending+Spring+and+the+Actor+Model%20https%3A%2F%2Fgithub.com%2Fpages%2FseonWKim%2FseonWKim%2Fblog%2Fwelcome-to-jekyll%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fas fa-fw fa-share-alt" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fpages%2FseonWKim%2FseonWKim%2Fblog%2Fwelcome-to-jekyll%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/pages/seonWKim/seonWKim/blog/welcome-to-jekyll/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Building+a+Side+Project%3A+Blending+Spring+and+the+Actor+Model%20https%3A%2F%2Fgithub.com%2Fpages%2FseonWKim%2FseonWKim%2Fblog%2Fwelcome-to-jekyll%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You May Also Enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+  </div>
+</div>
+
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/pages/seonWKim/seonWKim/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://github.com">Engineering Blog</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/pages/seonWKim/seonWKim/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/pages/seonWKim/seonWKim/assets/js/lunr/lunr.min.js"></script>
+<script src="/pages/seonWKim/seonWKim/assets/js/lunr/lunr-store.js"></script>
+<script src="/pages/seonWKim/seonWKim/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

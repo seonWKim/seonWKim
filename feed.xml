@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://github.com/pages/seonWKim/seonWKim/feed.xml" rel="self" type="application/atom+xml" /><link href="https://github.com/pages/seonWKim/seonWKim/" rel="alternate" type="text/html" /><updated>2025-04-28T00:28:39+00:00</updated><id>https://github.com/pages/seonWKim/seonWKim/feed.xml</id><title type="html">Engineering Blog</title><subtitle>Personal thoughts on programming, life and so on</subtitle><author><name>Seon Woo Kim</name></author><entry><title type="html">Building a Side Project: Blending Spring and the Actor Model</title><link href="https://github.com/pages/seonWKim/seonWKim/blog/welcome-to-jekyll/" rel="alternate" type="text/html" title="Building a Side Project: Blending Spring and the Actor Model" /><published>2025-04-27T15:00:00+00:00</published><updated>2025-04-27T15:00:00+00:00</updated><id>https://github.com/pages/seonWKim/seonWKim/blog/welcome-to-jekyll</id><content type="html" xml:base="https://github.com/pages/seonWKim/seonWKim/blog/welcome-to-jekyll/"><![CDATA[<p>Recently, I’ve been busy with work, and I ended up putting off my side projects. I started feeling like I was
+losing the real happiness that comes from learning something new outside of my job. I really wanted to make
+something useful (there MUST be a NEED) and regain the joy that comes from programming.</p>
+
+<p>In South Korea, most companies use Java with Spring (usually Spring Boot). Modern programming guides recommend
+building stateless architectures. So yes, we mostly use Spring MVC (or WebFlux) to build our web servers. But
+sometimes, I’ve struggled when architecting applications that need stateful features. Think about chat apps —
+your server needs to know where the clients inside the same chatroom are located. Otherwise, you can’t send
+messages between them. In stateless applications, you have to find a way to make it stateful. For example:</p>
+
+<ul>
+  <li>Using a message bus like Redis pub/sub, NATS.io, or Kafka.</li>
+</ul>
+
+<p>Sure, building that kind of system is fine at big companies. But what if you want to build it as a side project
+using familiar tech like Spring Boot? Do you really want to introduce a whole message bus into your
+architecture? (Especially when your server handles only a small number of requests — or even none?)</p>
+
+<p>There’s a well-known programming model suited for stateful applications: the actor model.</p>
+
+<p>I’ve heard about it here and there:</p>
+
+<ul>
+  <li>The Akka framework</li>
+  <li>The Elixir programming language</li>
+  <li>Big tech and telecom companies</li>
+</ul>
+
+<p>I became pretty interested in the way they model things:</p>
+
+<ul>
+  <li>Encapsulate logic into actors</li>
+  <li>Communicate by sending messages between them</li>
+</ul>
+
+<p>It felt much more intuitive, especially from an OOP (Object-Oriented Programming) perspective. With Spring Boot
+and plain Java, I always had to be careful not to break encapsulation and OOP best practices. But with actors,
+just following their programming style naturally keeps you within good OOP principles. Beyond that, actors make
+clustering across stateful applications much easier.</p>
+
+<p>The actor model isn’t a silver bullet either. (If it were, wouldn’t it be used everywhere?) But if I can
+integrate the actor model with Spring, maybe I can bring together the good parts of both worlds. (Yeah, it could
+also bring the worst parts too — who knows.)</p>
+
+<p>Here’s the rough plan:</p>
+
+<ul>
+  <li>Build a library that integrates Spring and the actor model.</li>
+  <li>Not build the actor system from scratch.</li>
+  <li>Instead, use Pekko — an open-source, community-driven fork of Akka without licensing headaches.</li>
+</ul>
+
+<p>Pekko has already been battle-tested in many real-world systems, so it feels like a solid choice.</p>
+
+<p>Starting a new side project is always exciting. But to make it sustainable, it has to be <strong>useful</strong>. While
+developing, I’ll stay focused on:</p>
+
+<ul>
+  <li>Being <strong>practical</strong> first</li>
+  <li>Optimization and beautiful code will come later — after the working code</li>
+</ul>
+
+<p>Hope I can run a (programming) marathon this time.</p>]]></content><author><name>Seon Woo Kim</name></author><category term="blog" /><category term="SpringBoot" /><category term="ActorModel" /><category term="SideProject" /><category term="Pekko" /><category term="Java" /><summary type="html"><![CDATA[Recently, I’ve been busy with work, and I ended up putting off my side projects. I started feeling like I was losing the real happiness that comes from learning something new outside of my job. I really wanted to make something useful (there MUST be a NEED) and regain the joy that comes from programming.]]></summary></entry></feed>
