@@ -25,6 +25,7 @@ jobs:
       - name: Build Jekyll Site
         run: |
           export JEKYLL_ENV=production
+          export PAGES_REPO_NWO=${{ github.repository }}
           bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
