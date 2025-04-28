@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79935a4-bd0d-4d5d-a04e-54ea50bb1c4d" name="Changes" comment="add workflow" />
+    <list default="true" id="e79935a4-bd0d-4d5d-a04e-54ea50bb1c4d" name="Changes" comment="nit">
+      <change afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +66,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/css" />
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
   </component>
@@ -80,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745796132451</updated>
-      <workItem from="1745796134500" duration="4895000" />
+      <workItem from="1745796134500" duration="5221000" />
     </task>
     <task id="LOCAL-00001" summary="Apply jekyll">
       <option name="closed" value="true" />
@@ -114,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745799464303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="nit">
+      <option name="closed" value="true" />
+      <created>1745801126815</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745801126815</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +143,8 @@
     <MESSAGE value="Add first blog" />
     <MESSAGE value="Add first post" />
     <MESSAGE value="add workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="add workflow" />
+    <MESSAGE value="nit" />
+    <option name="LAST_COMMIT_MESSAGE" value="nit" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
