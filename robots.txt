@@ -1,1 +1,1 @@
-Sitemap: https://github.com/pages/seonWKim/seonWKim/sitemap.xml
+Sitemap: https://seonwkim.github.io/seonWKim/sitemap.xml
