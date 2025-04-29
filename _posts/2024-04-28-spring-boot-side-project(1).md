@@ -1,6 +1,6 @@
 ---
 title: "Building a Side Project: Blending Spring and the Actor Model"
-date: 2025-04-28T00:00:00+09:00
+date: 2025-04-29T00:00:00+09:00
 categories:
   - blog
 tags:
