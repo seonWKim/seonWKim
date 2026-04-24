@@ -6,7 +6,7 @@
     - [EastGuard](https://github.com/f-rustrated/EastGuard): Zero-controller messaging system with infinite scalability 
     - [Limbo](https://github.com/tursodatabase/limbo): An async-powered Rust rewrite of SQLite 
     - [spring-boot-starter-actor](https://github.com/seonWKim/spring-boot-starter-actor): Actors kindly introduced to Spring 
-    - [Armeria](https://github.com/line/armeria): Async server framework 
+    - [Armeria](https://github.com/line/armeria): Async server lib 
     
 - Others
     - [F-Lab](https://f-lab.kr/?utm_source=gdn&utm_medium=da&utm_campaign=performancemax_3&utm_content=max_20240905&gad_source=1&gclid=Cj0KCQiAwOe8BhCCARIsAGKeD55JXZxLZcMySohgWnapaBN_S3Sc_Mt15Eql3fyq2Gevix0abd5OjnAaAiaHEALw_wcB) Software Developer Mentorship Mentor (2023 ~ )
