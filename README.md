@@ -3,9 +3,10 @@
     - Server, Database, Distributes computing, Programming languages
     - bit of AI when needed...
 - Open Source
-    - [Limbo](https://github.com/tursodatabase/limbo) 🏃
-    - [spring-boot-starter-actor](https://github.com/seonWKim/spring-boot-starter-actor) 🔥
-    - [Armeria](https://github.com/line/armeria) 😴
+    - [EastGuard](https://github.com/f-rustrated/EastGuard) 🔥
+    - [Limbo](https://github.com/tursodatabase/limbo)
+    - [spring-boot-starter-actor](https://github.com/seonWKim/spring-boot-starter-actor)
+    - [Armeria](https://github.com/line/armeria)
     
 - Others
     - [Toastmasters](https://seonwkim.github.io/hdtm-document/) (2023 ~ )
